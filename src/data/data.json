@@ -1,17 +1,33 @@
-{
-  [
-    {
-      "pic": "",
-      "firstName": "Susan",
-      "lastName": "Smith",
-      "email": "susieq420@hotmail.com", 
-      "phone": 2025551234
-    },{
-      "pic": "",
-      "firstName": "Susan",
-      "lastName": "Smith",
-      "email": "susieq420@hotmail.com", 
-      "phone": 2025551234
-    }
-  ]
-}
+[
+  {
+    "pic": "./data/images/susan.jpg",
+    "firstName": "Susan",
+    "lastName": "Smith",
+    "email": "susieq420@hotmail.com", 
+    "phone": "202-555-1234"
+  },{
+    "pic": "https://loremflickr.com/200/200",
+    "firstName": "Susan",
+    "lastName": "Smith",
+    "email": "susieq420@hotmail.com", 
+    "phone": "202-555-1234"
+  },{
+    "pic": "https://placekitten.com/200/200",
+    "firstName": "Susan",
+    "lastName": "Smith",
+    "email": "susieq420@hotmail.com", 
+    "phone": "202-555-1234"
+  },{
+    "pic": "",
+    "firstName": "Susan",
+    "lastName": "Smith",
+    "email": "susieq420@hotmail.com", 
+    "phone": "202-555-1234"
+  },{
+    "pic": "https://baconmockup.com/200/200",
+    "firstName": "Susan",
+    "lastName": "Smith",
+    "email": "susieq420@hotmail.com", 
+    "phone": "202-555-1234"
+  }
+]
