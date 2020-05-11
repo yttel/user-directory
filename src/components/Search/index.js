@@ -3,7 +3,7 @@ import React from "react";
 function Search({ searchTerm, handleInputChange }) {
   return (
     <div>
-      <form className="form">
+      <form className="form text-center">
         <input
           value={searchTerm}
           name="searchTerm"

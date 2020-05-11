@@ -2,7 +2,7 @@ import React from "react";
 import TableRow from "../TableRow";
 import data from "../../data/data.json";
 
-function Table({searchTerm, handleSortBy}) {
+function Table({searchTerm, sortBy, handleSortBy}) {
   return (
     <div className="container">
       <table className = "table table-bordered table-striped table-dark">
@@ -19,8 +19,8 @@ function Table({searchTerm, handleSortBy}) {
         <tbody>
           {
             data
-            .sort((a, b) => {return a.lastName - b.lastName})
-            // .sort((a, b) => {return a[sortBy] - b[sortBy]})
+            // .sort((a, b) => {return a.lastName - b.lastName})
+            .sort((a,b) => {return (a[sortBy] > b[sortBy]) ? 1 : -1})
             .filter((employee) => {
               const { firstName, lastName, email, phone } = employee;
               const thisEmployee = (firstName + lastName + email + phone).toLowerCase();

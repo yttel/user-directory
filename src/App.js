@@ -42,39 +42,8 @@ class App extends React.Component {
     return (
       <div>
         <Search searchTerm={this.state.searchTerm} handleInputChange={this.handleInputChange}/>
+        
         <Table searchTerm={this.state.searchTerm} sortBy={this.state.sortBy} handleSortBy={this.handleSortBy}/>
-
-        {/* <div className="container">
-          <table className = "table table-bordered table-striped table-dark">
-            <caption>List of Employees</caption>
-            <thead>
-              <tr>    
-                <th scope = "col" ></th>
-                <th scope = "col" id="firstName" onClick = {this.handleSortBy} >First Name</th>
-                <th scope = "col" id="lastName" onClick = {this.handleSortBy} >Last Name</th>
-                <th scope = "col" id="email" onClick = {this.handleSortBy} >email</th>
-                <th scope = "col" id="phone" onClick = {this.handleSortBy} >phone</th>
-              </tr>
-            </thead>
-            <tbody>
-              {
-                data
-                .sort((a, b) => {return a[this.state.sortBy] - b[this.state.sortBy]})
-                .filter((employee) => {
-                  const { firstName, lastName, email, phone } = employee;
-
-                  return (firstName + lastName + email + phone).includes(this.state.searchTerm);
-
-                })
-                .map((filteredEmp, index) => {
-                  return (
-                    <TableRow {...filteredEmp} key={`employeeList${index}`} />
-                  )
-                })
-              } 
-            </tbody>
-          </table>
-        </div> */}
       </div>
     )
   }
