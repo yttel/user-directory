@@ -13,7 +13,7 @@ class App extends React.Component {
     sortBy: "lastName"
   };
   
-  handleInputChange = event => {
+  handleInputChange = (event) => {
     // Getting the value and name of the input which triggered the change
     const value = event.target.value;
     const name = event.target.name;
@@ -23,7 +23,6 @@ class App extends React.Component {
       [name]: value
     });
   };
-  
 
   componentDidUpdate() {
     console.log(this.state.searchTerm);    

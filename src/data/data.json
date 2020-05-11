@@ -1,22 +1,21 @@
 [
   {
-    "pic": "./data/images/susan.jpg",
-    "firstName": "Susan",
-    "lastName": "Smith",
-    "email": "susieq420@hotmail.com", 
-    "phone": "202-555-1234"
+    "firstName": "Dan",
+    "lastName": "Abdinoor",
+    "email": "djdano623@hotmail.com", 
+    "phone": "603-520-1234"
   },{
     "pic": "https://loremflickr.com/200/200",
-    "firstName": "Susan",
-    "lastName": "Smith",
-    "email": "susieq420@hotmail.com", 
-    "phone": "202-555-1234"
+    "firstName": "Michael",
+    "lastName": "Gruen",
+    "email": "mgruen@gmail.com", 
+    "phone": "617-230-7653"
   },{
     "pic": "https://placekitten.com/200/200",
-    "firstName": "Susan",
-    "lastName": "Smith",
-    "email": "susieq420@hotmail.com", 
-    "phone": "202-555-1234"
+    "firstName": "Letty",
+    "lastName": "Bedard",
+    "email": "lettybedard@gmail.com", 
+    "phone": "603-520-8494"
   },{
     "pic": "",
     "firstName": "Susan",
@@ -25,9 +24,15 @@
     "phone": "202-555-1234"
   },{
     "pic": "https://baconmockup.com/200/200",
-    "firstName": "Susan",
-    "lastName": "Smith",
-    "email": "susieq420@hotmail.com", 
-    "phone": "202-555-1234"
+    "firstName": "Michael Tyler",
+    "lastName": "Fearnley",
+    "email": "mtfear@hotmail.com", 
+    "phone": "603-335-1991"
+  },{
+    "pic": "https://placedog.net/200/200",
+    "firstName": "Robert R",
+    "lastName": "Hoffman Jr",
+    "email": "djbobbybeats@gmail.com", 
+    "phone": "603-580-1446"
   }
 ]
