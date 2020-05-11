@@ -1,8 +1,8 @@
 import React from 'react';
 import Search from "./components/Search";
-// import noImg from "./data/images/noImg200x200.png";
-import TableRow from "./components/TableRow";
-import data from "./data/data.json";
+import Table from "./components/Table";
+// import TableRow from "./components/TableRow";
+// import data from "./data/data.json";
 
 import './App.css';
 
@@ -28,21 +28,32 @@ class App extends React.Component {
     console.log(this.state.searchTerm);    
     console.log(this.state.sortBy);
   };
+
+  handleSortBy = (event) => {  
+    console.table(`event.target.id: ${event.target.id}`);
+    const id = event.target.id;
+
+    this.setState({
+      sortBy: id
+    });
+  }
   
   render() {
     return (
       <div>
         <Search searchTerm={this.state.searchTerm} handleInputChange={this.handleInputChange}/>
-        <div className="container">
+        <Table searchTerm={this.state.searchTerm} sortBy={this.state.sortBy} handleSortBy={this.handleSortBy}/>
+
+        {/* <div className="container">
           <table className = "table table-bordered table-striped table-dark">
             <caption>List of Employees</caption>
             <thead>
               <tr>    
                 <th scope = "col" ></th>
-                <th scope = "col" onClick = {() => this.setState({sortBy: "firstName"})} >First Name</th>
-                <th scope = "col" onClick = {() => this.setState({sortBy: "lastName"})} >Last Name</th>
-                <th scope = "col" onClick = {() => this.setState({sortBy: "email"})} >email</th>
-                <th scope = "col" onClick = {() => this.setState({sortBy: "phone"})} >phone</th>
+                <th scope = "col" id="firstName" onClick = {this.handleSortBy} >First Name</th>
+                <th scope = "col" id="lastName" onClick = {this.handleSortBy} >Last Name</th>
+                <th scope = "col" id="email" onClick = {this.handleSortBy} >email</th>
+                <th scope = "col" id="phone" onClick = {this.handleSortBy} >phone</th>
               </tr>
             </thead>
             <tbody>
@@ -52,9 +63,7 @@ class App extends React.Component {
                 .filter((employee) => {
                   const { firstName, lastName, email, phone } = employee;
 
-                  const thisEmployee = firstName + lastName + email + phone;
-
-                  return thisEmployee.includes(this.state.searchTerm);
+                  return (firstName + lastName + email + phone).includes(this.state.searchTerm);
 
                 })
                 .map((filteredEmp, index) => {
@@ -65,7 +74,7 @@ class App extends React.Component {
               } 
             </tbody>
           </table>
-        </div>
+        </div> */}
       </div>
     )
   }
