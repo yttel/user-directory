@@ -15,7 +15,7 @@ class App extends React.Component {
   
   handleInputChange = (event) => {
     // Getting the value and name of the input which triggered the change
-    const value = event.target.value;
+    const value = event.target.value.toLowerCase();
     const name = event.target.name;
 
     // Updating the input's state
